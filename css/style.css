@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Valorant';
+    src: url('../css/fonts/Valorantfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor01: #D32323;
+    --cor02: #000;
+    --cor03: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlayA {
+    font-family: Valorant;
+    font-size: 25px;
+    text-align: justify;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 100%;
+    opacity: 0;
+    color: var(--cor03);
+    transition: opacity 0.5s ease;
+}
+.overlayM {
+    font-family: Valorant;
+    font-size: 25px;
+    text-align: justify;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 100%;
+    opacity: 0;
+    color: var(--cor03);
+    transition: opacity 0.5s ease;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+#cabecalho, #conteudo, #rodape {
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#conteudo .titulo-galeria {
+    text-align: left;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: var(--cor03);
+    font-family: 'Valorant';
+    margin-top: 100px;
+    margin-left: 550px;
+    margin-bottom: 0px;
+}
+
+#conteudo .titulo-mapas{
+    text-align: left;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 60px;
+    color: var(--cor01);
+    font-family: 'Valorant';
+    margin-top: 0%;
+    margin-left: 550px;
+    
+}
+
+
+
+#conteudo {
+    margin-top: 0; 
+    padding: 0; 
+}
+
+#conteudo .container p {
+    max-width: 800px; 
+    margin: auto; 
+    line-height: 1.8; 
+    color: var(--cor03);
+}
+
+#conteudo .container h2 {
+    color: var(--cor01);
+    margin: auto;
+    font-family: 'Valorant';
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    max-width: 900px;
+    text-transform: uppercase;
+}
+
+#conteudo h1 {
+    color: var(--cor01);
+    text-align: center;
+    font-family: 'Valorant';
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 65px;
+    max-width: 900px;
+    text-transform: uppercase;
+}
+
+#conteudo h2 {
+    color: var(--cor01);
+    text-align: center;
+    font-family: 'Valorant';
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 50px;
+    max-width: 900px;
+    text-transform: uppercase;
+}
+
+#conteudo .titulo-historia {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+
+#conteudo .container {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 0;
+}
+#conteudo .video-container {
+    margin-left: 221px;
+}
+
+#conteudo .agentes {
+    margin-top: 0px; 
+}
+
+#conteudo .agentes h1 {
+    margin: 0;
+    margin-top: 0px; 
+    margin-bottom: 20px; 
+}
+
+
+#cabecalho {
+    background-color: var(--cor02);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logo1 {
+    width: 35px; 
+    margin-left: 40px; 
+}
+
+.logo2 {
+    width: 100px;
+    margin-left: 15px;
+}
+
+#cabecalho #menu {
+    margin-left: 90px;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+
+#cabecalho #menu ul li {
+    /* Remove marcação do item da lista */
+    list-style: none;
+}
+
+#cabecalho #menu a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    transition: background-color 0.3s linear;
+}
+
+#cabecalho #menu a:hover {
+    background-color: var(--cor01);
+}
+
+
+
+
+
+#cabecalho .social-media {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#cabecalho .social-media .social-icon {
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+#cabecalho .social-media .social-icon:hover {
+    color: var(--cor01);
+}
+
+
+#rodape {
+    background-color: var(--cor02);
+    color: var(--cor03);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#rodape a {
+    color: var(--cor01);
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: relative; 
+    width: 700px;
+}
+
+.fotos img {
+    transition: all 0.3s linear;
+}
+
+.fotos img:hover {
+    transform: scale(0.99);
+}
+
+.fotosM {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    position: justify; 
+    width: 1200px;
+    display: grid;
+}
+
+.fotosM img {
+    transition: all 0.3s linear;
+    padding-top: 10px;
+}
+
+.fotosM img:hover {
+    transform: scale(0.99);
+}
+.fotosM .overlayA{
+    margin-top: 30px;
+    margin-bottom: 1000px;
+}
+.fotosM .overlayM{
+    margin-top: 30px;
+    margin-bottom: 1000px;
+}
+
+.foto-container:hover .overlayA {
+    opacity: 1;
+}
+.foto-container:hover .overlayM {
+    opacity: 1;
+}
+
+.foto-container {
+    position: relative; 
+}
+
+.gif {
+    display: none;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.video-background, .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section {
+    z-index: 1;
+    padding: 1px ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+section .container p {
+    position: center ;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.but {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--cor01);
+    color: var(--cor03);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-left: 410px;
+}
+
+.but:hover {
+    background-color: #b71d1d;
+}
+
+nav#menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav#menu ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav#menu ul li:not(:last-child)::after {
+    content: '';
+    border-left: 1px solid var(--cor01);
+    height: 15px; 
+    margin: 5px; 
+}
+
+.containerbanner {
+    
+    max-width: 900px;
+    margin: auto;
+}
+
+.containerbanner ul li {
+    list-style: none;
+}
+#banners {
+    margin-top: 100px;
+    
+}
+
+
+
